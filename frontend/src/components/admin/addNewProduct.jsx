@@ -80,11 +80,11 @@ const AddNewProduct = () => {
                         <label>Category</label>
                         <select onChange={(e)=>setCategory(e.target.value)} required>
                             <option value="">Select</option>
-                            <option value="GK">General Knowledge</option>
-                            <option value="BS">Business Study</option>
-                            <option value="AD">Arts & Design</option>
-                            <option value="Myth">Mythology</option>
-                            <option value="Horo">Horoscope</option>
+                            <option value="GeneralKnowledge">General Knowledge</option>
+                            <option value="BusinessStudy">Business Study</option>
+                            <option value="Arts&Design">Arts & Design</option>
+                            <option value="Mythology">Mythology</option>
+                            <option value="Horoscope">Horoscope</option>
                         </select>
                     </div>
                     <div>

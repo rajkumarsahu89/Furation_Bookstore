@@ -37,7 +37,7 @@ const Navbar = () => {
       <div style={{paddingBottom:"4rem"}}>
         <div className="wrapper">
           <header>
-            <img id="logo" src={logo} alt="logo" />
+            <NavLink to="/" onClick={showNavbar}><img id="logo" src={logo} alt="logo" /></NavLink>
             <input type="text" placeholder="Search your best Book" />
             <nav ref={navRef} id="nav">
               <NavLink to="/" onClick={showNavbar} >Home</NavLink>

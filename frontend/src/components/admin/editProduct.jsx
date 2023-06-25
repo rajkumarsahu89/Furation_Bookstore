@@ -102,11 +102,11 @@ const EditProduct = ({el}) => {
                                 <label>Category</label>
                                 <select onChange={(e)=>setCategory(e.target.value)} value={el.category} required>
                                     <option value="">Select</option>
-                                    <option value="Paneer">Paneer</option>
-                                    <option value="Rice">Rice</option>
-                                    <option value="Dosa">Dosa</option>
-                                    <option value="Daal">Daal</option>
-                                    <option value="Roti">Roti</option>
+                                    <option value="GeneralKnowledge">General Knowledge</option>
+                                    <option value="BusinessStudy">Business Study</option>
+                                    <option value="Arts&Design">Arts & Design</option>
+                                    <option value="Mythology">Mythology</option>
+                                    <option value="Horoscope">Horoscope</option>
                                 </select>
                             </div>
                             <input type="submit" value={isLoading === true ? "..wait" : ("Submit")} style={{width:"100%", margin:"1rem 0", cursor:'pointer'}} />

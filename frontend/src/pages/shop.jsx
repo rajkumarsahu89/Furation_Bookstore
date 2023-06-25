@@ -27,11 +27,11 @@ const Shop = () => {
                 <div id="filter-sort-section">
                     <select onChange={(e)=>setFilter(e.target.value)}>
                         <option value="">All Categories</option>
-                        <option value="GK">General Knowledge</option>
-                        <option value="BS">Business Study</option>
-                        <option value="AD">Arts & Design</option>
-                        <option value="Myth">Mythology</option>
-                        <option value="Horo">Horoscope</option>
+                        <option value="GeneralKnowledge">General Knowledge</option>
+                        <option value="BusinessStudy">Business Study</option>
+                        <option value="Arts&Design">Arts & Design</option>
+                        <option value="Mythology">Mythology</option>
+                        <option value="Horoscope">Horoscope</option>
                     </select>
                 </div>
                 <ShopItems filter={filter} products={products} />
