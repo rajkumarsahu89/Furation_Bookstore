@@ -1,7 +1,7 @@
-<h1>Good Food<h1>
+<h1>Book Store<h1>
 
 <h1>Description</h1>
-<p>It is an E-commerce web application related to food. Users can order food and the admin can manage all items and manage orders.</p>
+<p>It is an E-commerce web application related to Book store. Users can order food and the admin can manage all items and manage orders.</p>
 
 <h1>Tech Stacks we have used</h1>
 
@@ -31,25 +31,27 @@
 <h1>Let's move to Desktop screen</h1>
 <div>
 <h2>1</h2>
-<img src="https://user-images.githubusercontent.com/107476003/235450590-ba2062ab-2bb5-476e-b45d-fd7fba54d4bf.png" />
-</div>
 
-<div>
+
+![book1](https://github.com/rajkumarsahu89/Furation_Bookstore/assets/106021391/c09076c5-3443-4aaf-bbb1-e06e2f2e0de3)
+
+
 <h2>2</h2>
-<img src="https://user-images.githubusercontent.com/107476003/235450656-4833d79f-7134-4b39-89fd-afe4c1a59555.png" />
-</div>
+
+![book2](https://github.com/rajkumarsahu89/Furation_Bookstore/assets/106021391/39f1051a-558d-43bf-8aca-00d78b5d30d0)
 
 
 <h1>Let's move to Mobile screen</h1>
-<div>
-<h2>1</h2>
-<img src="https://user-images.githubusercontent.com/107476003/235450703-c9ee64d8-ecc8-4543-96a8-6aaa0419506a.png" width="400px"/>
-</div>
 
-<div>
+<h2>1</h2>
+
+![Screenshot (121)](https://github.com/rajkumarsahu89/Furation_Bookstore/assets/106021391/5b66817b-bb82-4ccf-9f70-aebf647bce4a)
+
+
 <h2>2</h2>
-<img src ="https://user-images.githubusercontent.com/107476003/235450738-e52d3018-9184-4b51-8be8-30f3a8bfbb09.png" width="400px"/>
-</div>
+
+![Screenshot (122)](https://github.com/rajkumarsahu89/Furation_Bookstore/assets/106021391/fb3f78c7-b106-464f-9ebc-700bea67ab30)
+
 
 
 <h1>Go Live</h1>
