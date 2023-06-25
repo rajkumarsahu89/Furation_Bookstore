@@ -54,9 +54,5 @@
 
 
 
-<h1>Go Live</h1>
 
-<ul>App Deployed Link
-<li>https://best-good-food.vercel.app/</li>
-</ul>
 
