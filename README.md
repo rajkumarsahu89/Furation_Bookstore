@@ -1,7 +1,7 @@
 <h1>Book Store<h1>
 
 <h1>Description</h1>
-<p>It is an E-commerce web application related to Book store. Users can order food and the admin can manage all items and manage orders.</p>
+<p>It is an E-commerce web application related to Book store. Users can order book and the admin can manage all items and manage orders.</p>
 
 <h1>Tech Stacks we have used</h1>
 
