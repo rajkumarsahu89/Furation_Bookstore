@@ -21,44 +21,43 @@ const AddNewProduct = () => {
         var output = document.getElementById("output");
         output.src = URL.createObjectURL(event.target.files[0]);
         output.onload = function () {
-          URL.revokeObjectURL(output.src);
+            URL.revokeObjectURL(output.src);
         };
     };
 
     // form submit-
-    const submitHandler = (e)=>{
+    const submitHandler = (e) => {
         e.preventDefault(e)
 
         let user = JSON.parse(localStorage.getItem("user")) || "";
         user = user.email;
 
-        if(user !== undefined){
+        if (user !== undefined) {
             setLoading(true);
             const data = new FormData();
             data.append("file", productPic);
             data.append("upload_preset", "Book store");
             data.append("cloud_name", "difcz1t9f")
             axios
-            .post("https://api.cloudinary.com/v1_1/difcz1t9f/image/upload", data)
-            .then(res=>{
-                setLoading(false);
+                .post("https://api.cloudinary.com/v1_1/difcz1t9f/image/upload", data)
+                .then(res => {
+                    setLoading(false);
 
-                if(res.data.url)
-                {
-                    // payload-
-                    let payload = {
-                        name,
-                        price,
-                        category,
-                        productPic: res.data.url,
+                    if (res.data.url) {
+                        // payload-
+                        let payload = {
+                            name,
+                            price,
+                            category,
+                            productPic: res.data.url,
+                        }
+                        // add all details of a product-
+                        dispatch(addNewProductFun(payload, user)).then(() => {
+                            form.current.reset();
+                        })
                     }
-                    // add all details of a product-
-                    dispatch(addNewProductFun(payload, user)).then(()=>{
-                        form.current.reset();
-                    })
-                }
-            })
-            .catch(err=>console.log(err))
+                })
+                .catch(err => console.log(err))
         }
     }
 
@@ -70,15 +69,15 @@ const AddNewProduct = () => {
                 <form onSubmit={submitHandler} ref={form}>
                     <div>
                         <label>Name</label>
-                        <input type="text" placeholder='Name' onChange={(e)=>setName(e.target.value)} required />
+                        <input type="text" placeholder='Name' onChange={(e) => setName(e.target.value)} required />
                     </div>
                     <div>
                         <label>Price</label>
-                        <input type="tel" placeholder='Price' onChange={(e)=>setPrice(e.target.value)}required />
+                        <input type="tel" placeholder='Price' onChange={(e) => setPrice(e.target.value)} required />
                     </div>
                     <div>
                         <label>Category</label>
-                        <select onChange={(e)=>setCategory(e.target.value)} required>
+                        <select onChange={(e) => setCategory(e.target.value)} required>
                             <option value="">Select</option>
                             <option value="GeneralKnowledge">General Knowledge</option>
                             <option value="BusinessStudy">Business Study</option>
@@ -88,14 +87,14 @@ const AddNewProduct = () => {
                         </select>
                     </div>
                     <div>
-                        <input type="file" accept="image/*" onChange={(e)=> {loadfile(e); setProductPic(e.target.files[0])}} required />
+                        <input type="file" accept="image/*" onChange={(e) => { loadfile(e); setProductPic(e.target.files[0]) }} required />
                         <img src={""} id="output" alt="" />
                     </div>
-                    <input type="submit" value={loading === true ? "..wait" : "Submit"} style={{width:"100%", margin:"1rem 0", cursor:'pointer'}} />
+                    <input type="submit" value={loading === true ? "..wait" : "Submit"} style={{ width: "100%", margin: "1rem 0", cursor: 'pointer' }} />
                 </form>
-            
+
             </div>
-            <Bottombar/>
+            <Bottombar />
         </>
     )
 }

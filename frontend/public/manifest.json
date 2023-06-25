@@ -4,8 +4,8 @@
   "display" : "standalone",
   "scope" : "/",
   "start_url" : "/",
-  "name" : "Good Food",
-  "short_name" : "Good Food",
+  "name" : "Book Store",
+  "short_name" : "Book Store",
 "icons": [
   {
     "src": "SR_Logo.png",
