@@ -29,7 +29,7 @@ const Shop = () => {
                         <option value="">All Categories</option>
                         <option value="GeneralKnowledge">General Knowledge</option>
                         <option value="BusinessStudy">Business Study</option>
-                        <option value="Arts&Design">Arts & Design</option>
+                        <option value="ArtsDesign">Arts & Design</option>
                         <option value="Mythology">Mythology</option>
                         <option value="Horoscope">Horoscope</option>
                     </select>
