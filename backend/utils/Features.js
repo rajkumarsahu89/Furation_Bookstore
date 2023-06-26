@@ -17,6 +17,17 @@ class Features {
       this.query = this.query.find({ ...keyword });
       return this;
     }
+
+    // search(keyword) {
+    //   const query = {};
+    
+    //   if (keyword) {
+    //     query.name = { $regex: keyword, $options: "i" };
+    //   }
+    
+    //   this.query = this.query.find(query);
+    //   return this;
+    // }
   
     filter() {
       const queryCopy = { ...this.queryStr };
