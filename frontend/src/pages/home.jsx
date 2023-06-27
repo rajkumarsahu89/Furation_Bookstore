@@ -17,7 +17,7 @@ const Home = () => {
       <BgVideo/>
       <OrderItems orderItem={knowledgeItems} title={"General Knowledge"} />
       <OrderItems orderItem={businessItems} title={"Business Study"} />
-      <OrderItems orderItem={artItems} title={"Arts & Design"} />
+      <OrderItems orderItem={artItems} title={"Medical Science"} />
       <OrderItems orderItem={godsdata} title={"Mythology"} />
       <OrderItems orderItem={horoscopeItems} title={"Horoscope"} />
       
